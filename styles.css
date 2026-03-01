@@ -9,7 +9,7 @@
 @font-face { font-family:'SuisseIntl'; src:url('assets/fonts/SuisseIntl/SuisseIntl-Medium.otf') format('opentype'); font-weight:500; font-style:normal; font-display:swap; }
 @font-face { font-family:'SuisseIntl'; src:url('assets/fonts/SuisseIntl/SuisseIntl-SemiBold.otf') format('opentype'); font-weight:600; font-style:normal; font-display:swap; }
 @font-face { font-family:'SuisseIntl'; src:url('assets/fonts/SuisseIntl/SuisseIntl-Bold.otf') format('opentype'); font-weight:700; font-style:normal; font-display:swap; }
-@font-face { font-family:'SohneSchmal'; src:url('assets/fonts/SöhneSchmal-Halbfett.otf') format('opentype'); font-weight:700; font-style:normal; font-display:swap; }
+@font-face { font-family:'SohneSchmal'; src:url('assets/fonts/SohneSchmal-Halbfett.otf') format('opentype'); font-weight:700; font-style:normal; font-display:swap; }
 
 /* ---- Tokens ---- */
 :root {
