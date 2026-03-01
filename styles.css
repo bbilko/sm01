@@ -32,7 +32,7 @@
 /* ---- Reset ---- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
-body { font-family: var(--font-sans); background: var(--color-white); color: var(--color-black); line-height: 1.4; }
+body { font-family: var(--font-sans); background: var(--color-white); color: var(--color-black); line-height: 1.4; overflow-x: hidden; }
 img { display: block; max-width: 100%; }
 a { text-decoration: none; color: inherit; }
 button { font-family: var(--font-sans); cursor: pointer; border: none; background: none; }
@@ -320,7 +320,7 @@ input, select, textarea { font-family: var(--font-sans); }
   margin-bottom: 28px;
 }
 .section-label {
-  font-size: 72px;
+  font-size: clamp(32px, 9vw, 72px);
   font-weight: 400;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -1345,7 +1345,7 @@ input, select, textarea { font-family: var(--font-sans); }
   .main-nav { display: none; }
   .mobile-menu-btn { display: flex; }
   .product-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-  .hero-headline { font-size: clamp(52px, 14vw, 90px); }
+  .hero-headline { font-size: clamp(48px, 13vw, 90px); }
   .signup-headline { font-size: clamp(40px, 14vw, 80px); }
   .affiliates-headline { font-size: clamp(36px, 10vw, 56px); }
   .pdp-title { font-size: clamp(36px, 10vw, 56px); }
@@ -1359,6 +1359,10 @@ input, select, textarea { font-family: var(--font-sans); }
   .affiliates-cta-row { flex-direction: column; align-items: flex-start; }
   .signup-form { max-width: 100%; }
   .section-wrap { padding: 48px var(--pad) 0; }
+  /* Countdown: allow wrapping on narrow screens */
+  .signup-countdown { flex-wrap: wrap; white-space: normal; gap: 6px 20px; }
+  /* Mobile menu: give standalone links breathing room */
+  .mobile-nav-link--solo { margin-top: 12px; }
 }
 @media (max-width: 480px) {
   .product-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
