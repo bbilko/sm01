@@ -310,6 +310,11 @@ input, select, textarea { font-family: var(--font-sans); }
   letter-spacing: 0;
   padding: 6px 36px;
 }
+.hero-ctas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
 
 /* ---- Section Chrome ---- */
 .section-wrap { padding: 64px var(--pad) 0; max-width: var(--max-w); margin: 0 auto; }
@@ -1343,25 +1348,66 @@ input, select, textarea { font-family: var(--font-sans); }
   :root { --eco-h: 0px; }
   .ecosystem-bar { display: none; }
   .main-nav { display: none; }
-  .mobile-menu-btn { display: flex; }
-  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+
+  /* --- Nav: logo left, bag right, no hamburger for demo --- */
+  .header-inner { grid-template-columns: auto 1fr; }
+  .site-logo { justify-self: start; }
+  .header-actions { justify-self: end; }
+  .mobile-menu-btn { display: none; }
+  .mobile-menu { display: none !important; }
+
+  /* --- Hero: left-cropped image, full-width content, CTAs above fold --- */
+  .hero { justify-content: flex-end; }
+  .hero-bg { object-position: left 30%; }
+  .hero-content { justify-content: flex-start; padding-bottom: 40px; }
+  .hero-text { width: 100%; max-width: 100%; }
   .hero-headline { font-size: clamp(48px, 13vw, 90px); }
-  .signup-headline { font-size: clamp(40px, 14vw, 80px); }
+  .hero-ctas { flex-direction: column; gap: 20px; }
+  .hero-ctas .btn { width: 100%; text-align: center; }
+
+  /* --- Product grid: clean 2-col, reduced meta, full-width CTA --- */
+  .product-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .product-title { font-size: clamp(22px, 5.5vw, 36px); }
+  .product-card-brand, .product-card-price { font-size: 13px; }
+  .collection-cta { display: block; }
+  .collection-cta .btn { width: 100%; text-align: center; }
+
+  /* --- Affiliates: same grid fixes, disclaimer below headline --- */
+  .affiliates-wrap { padding: 48px var(--pad); }
+  .affiliates-header { flex-direction: column; align-items: flex-start; gap: 8px; }
   .affiliates-headline { font-size: clamp(36px, 10vw, 56px); }
+  .affiliates-disclaimer { text-align: left; font-size: 14px; }
+  .affiliates-cta-row { display: block; }
+  .affiliates-cta-row .btn { width: 100%; text-align: center; }
+
+  /* --- Signup / countdown: scale down to fit viewport --- */
+  .signup-section { padding: 18px var(--pad) 40px; }
+  .signup-headline { font-size: clamp(32px, 10vw, 60px); }
+  .signup-countdown { flex-wrap: wrap; white-space: normal; gap: 4px 16px; }
+  .countdown-num,
+  .countdown-label,
+  .signup-form-label,
+  .signup-input,
+  .signup-submit { font-size: clamp(18px, 5vw, 40px); letter-spacing: -1px; }
+  .signup-form { max-width: 100%; }
+
+  /* --- Footer: compact, single-column, fits viewport --- */
+  .chonky-footer { margin: 0; }
+  .footer-top { grid-template-columns: 1fr; padding: 24px 20px 16px; gap: 16px; }
+  .footer-top > div:nth-child(1),
+  .footer-top > div:nth-child(2),
+  .footer-top > div:nth-child(3) { grid-column: 1; }
+  .footer-tagline { font-size: 14px; line-height: 1.5; }
+  .footer-col-link { font-size: 14px; line-height: 26px; }
+  .footer-logo-area { padding: 16px var(--pad) 0; margin-bottom: -12px; }
+
+  /* --- Misc --- */
+  .section-wrap { padding: 48px var(--pad) 0; }
   .pdp-title { font-size: clamp(36px, 10vw, 56px); }
-  .chonky-footer { margin: 40px var(--pad) 12px; }
-  .footer-top { grid-template-columns: 1fr; padding: 32px 28px 28px; }
-  .footer-logo-area { padding: 24px var(--pad) 0; }
+  .pdp-page { padding: 32px var(--pad) 60px; }
   .ping-ad { height: 320px; }
   .ping-ad-figure { display: none; }
   .cart-drawer { width: 100%; }
-  .pdp-page { padding: 32px var(--pad) 60px; }
-  .affiliates-cta-row { flex-direction: column; align-items: flex-start; }
-  .signup-form { max-width: 100%; }
-  .section-wrap { padding: 48px var(--pad) 0; }
-  /* Countdown: allow wrapping on narrow screens */
-  .signup-countdown { flex-wrap: wrap; white-space: normal; gap: 6px 20px; }
-  /* Mobile menu: give standalone links breathing room */
   .mobile-nav-link--solo { margin-top: 12px; }
 }
 @media (max-width: 480px) {
