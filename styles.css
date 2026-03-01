@@ -1401,12 +1401,24 @@ input, select, textarea { font-family: var(--font-sans); }
   .footer-col-link { font-size: 14px; line-height: 26px; }
   .footer-logo-area { padding: 16px var(--pad) 0; margin-bottom: -12px; }
 
+  /* --- PING ad: scale down to fit 320px frame --- */
+  .ping-ad { height: 320px; }
+  .ping-ad-figure { display: none; }
+  .ping-ad-content { padding: 16px 20px; }
+  .ping-ad-presented { font-size: 22px; }
+  .ping-ad-logo { width: 140px; height: auto; }
+  .ping-ad-cta { font-size: 18px; margin-top: 8px; }
+
+  /* --- Ticker: 30% smaller --- */
+  .ticker-item { font-size: 134px; }
+
+  /* --- Signup: ensure page-consistent horizontal padding --- */
+  .signup-section { padding: 18px var(--pad) 40px; }
+
   /* --- Misc --- */
   .section-wrap { padding: 48px var(--pad) 0; }
   .pdp-title { font-size: clamp(36px, 10vw, 56px); }
   .pdp-page { padding: 32px var(--pad) 60px; }
-  .ping-ad { height: 320px; }
-  .ping-ad-figure { display: none; }
   .cart-drawer { width: 100%; }
   .mobile-nav-link--solo { margin-top: 12px; }
 }
