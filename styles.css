@@ -570,7 +570,7 @@ input, select, textarea { font-family: var(--font-sans); }
   max-width: var(--max-w);
   margin: 0 auto;
   display: grid;
-  justify-content: center;
+  grid-template-columns: minmax(0, 1fr);
 }
 @media (min-width: 1440px) {
   .signup-section {
