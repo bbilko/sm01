@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skratch Marketplace — Iconic Irons</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page-body">
+
+  <!-- PRO SHOP ECOSYSTEM BAR -->
+  <div class="eco-wrapper" id="ecoWrapper">
+  <div class="ecosystem-bar">
+    <div class="ecosystem-inner">
+      <img src="assets/vectors/Pro Shop Secondary.svg" alt="The Pro Shop" class="ecosystem-ps-logo" />
+      <nav class="ecosystem-nav">
+        <a href="https://skratch.golf" target="_blank" rel="noopener" class="ecosystem-link">Skratch</a>
+        <span class="ecosystem-divider">·</span>
+        <a href="index.html" class="ecosystem-link ecosystem-link--active">S.Market</a>
+        <span class="ecosystem-divider">·</span>
+        <a href="https://golfwrx.com" target="_blank" rel="noopener" class="ecosystem-link">GolfWRX</a>
+        <span class="ecosystem-divider">·</span>
+        <a href="https://sugarloafsocialclub.com" target="_blank" rel="noopener" class="ecosystem-link">Sugarloaf</a>
+      </nav>
+    </div>
+  </div>
+  </div><!-- /.eco-wrapper -->
+
+  <!-- MAIN HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-item">Shop</a>
+        <a href="#" class="nav-item">Collections</a>
+        <a href="#" class="nav-item">About</a>
+      </nav>
+      <a href="index.html" class="site-logo" aria-label="Skratch Marketplace">
+        <img src="assets/vectors/Marketplace Logo.svg" alt="Skratch Marketplace" />
+      </a>
+      <div class="header-actions">
+        <button class="cart-btn" id="cartToggle" aria-label="Cart">
+          <img src="assets/vectors/Bag.svg" alt="Cart" />
+          <span class="cart-count" id="cartCount" style="display:none">0</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-nav">
+        <div class="mobile-nav-section">
+          <p class="mobile-nav-label">Shop</p>
+          <a href="index.html" class="mobile-nav-link">Shop All</a>
+          <a href="index.html" class="mobile-nav-link">Equipment</a>
+          <a href="index.html" class="mobile-nav-link">Accessories</a>
+          <a href="index.html" class="mobile-nav-link">Apparel</a>
+        </div>
+        <a href="#" class="mobile-nav-link mobile-nav-link--solo">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-bg" src="assets/images/Hero Image - Ping Eye 2.png" alt="PING Eye 2 Irons" />
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-headline">Iconic<br>Irons</h1>
+        <p class="hero-copy">MP 14, TA 845 2, DCI 962…if these combinations of random letters and numbers mean anything to you, you know your icons. These iconic sets all changed the trajectory of iron play forever in their own ways. Learn more about each's place in history, and own your piece of it.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="#irons" class="btn btn--secondary">Ping Me</a>
+          <a href="#irons" class="btn btn--primary">View Collection</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IRONS COLLECTION -->
+  <div id="irons" class="section-wrap">
+    <div class="section-header reveal">
+      <span class="section-label">The Iconic Iron Collection</span>
+    </div>
+    <div class="product-grid">
+
+      <!-- PING Eye 2 -->
+      <div class="reveal">
+        <a href="pdp.html" class="product-card-link">
+          <div class="product-card">
+            <div class="product-card-img-wrap">
+              <img class="product-card-img" src="assets/images/product/Ping Eye 2.png" alt="PING Eye 2 BeCu Iron Set" />
+            </div>
+            <div class="product-card-divider"></div>
+            <div class="product-card-meta">
+              <span class="product-card-brand">PING</span>
+              <span class="product-card-price">$2,000.00</span>
+              <button class="product-card-add" onclick="event.preventDefault();addToCart({id:'ping-eye2',name:'1987 Eye 2 BeCu Iron Set',brand:'PING',price:'2000',image:'assets/images/product/Ping Eye 2.png'})" aria-label="Add to cart">+</button>
+            </div>
+            <p class="product-title">1987<br>Eye 2</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Mizuno MP-14 -->
+      <div class="reveal">
+        <a href="pdp.html" class="product-card-link">
+          <div class="product-card">
+            <div class="product-card-img-wrap">
+              <img class="product-card-img" src="assets/images/product/Miz MP 14.png" alt="Mizuno MP-14 Iron Set" />
+            </div>
+            <div class="product-card-divider"></div>
+            <div class="product-card-meta">
+              <span class="product-card-brand">Mizuno</span>
+              <span class="product-card-price">$1,500.00</span>
+              <button class="product-card-add" onclick="event.preventDefault();addToCart({id:'mizuno-mp14',name:'1997 MP-14 Iron Set',brand:'Mizuno',price:'1500',image:'assets/images/product/Miz MP 14.png'})" aria-label="Add to cart">+</button>
+            </div>
+            <p class="product-title">1997<br>MP-14</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Titleist DCI 962 -->
+      <div class="reveal">
+        <a href="pdp.html" class="product-card-link">
+          <div class="product-card">
+            <div class="product-card-img-wrap">
+              <img class="product-card-img" src="assets/images/product/Titleist DCI.png" alt="Titleist DCI 962 Iron Set" />
+            </div>
+            <div class="product-card-divider"></div>
+            <div class="product-card-meta">
+              <span class="product-card-brand">Titleist</span>
+              <span class="product-card-price">$1,500.00</span>
+              <button class="product-card-add" onclick="event.preventDefault();addToCart({id:'titleist-dci962',name:'1998 DCI 962 Iron Set',brand:'Titleist',price:'1500',image:'assets/images/product/Titleist DCI.png'})" aria-label="Add to cart">+</button>
+            </div>
+            <p class="product-title">1998<br>DCI 962</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Nike VR Pro Combo -->
+      <div class="reveal">
+        <a href="pdp.html" class="product-card-link">
+          <div class="product-card">
+            <div class="product-card-img-wrap">
+              <img class="product-card-img" src="assets/images/product/Nike MB.png" alt="Nike VR Pro Combo Iron Set" />
+            </div>
+            <div class="product-card-divider"></div>
+            <div class="product-card-meta">
+              <span class="product-card-brand">Nike</span>
+              <span class="product-card-price">$3,125.00</span>
+              <button class="product-card-add" onclick="event.preventDefault();addToCart({id:'nike-vr-pro',name:'VR Pro Combo Iron Set',brand:'Nike',price:'3125',image:'assets/images/product/Nike MB.png'})" aria-label="Add to cart">+</button>
+            </div>
+            <p class="product-title">2004<br>MB S300</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="collection-cta">
+      <a href="#" class="btn btn--primary">Experience the Collection</a>
+    </div>
+  </div>
+
+  <!-- PING SPONSORED AD -->
+  <div class="ping-ad-wrap">
+    <div class="ping-ad reveal">
+      <img class="ping-ad-bg" src="assets/images/ping-ad.png" alt="" />
+      <img class="ping-ad-figure" src="assets/ping-man.svg" alt="" />
+      <div class="ping-ad-content">
+        <div class="ping-ad-left">
+          <p class="ping-ad-presented">Proudly Presented By</p>
+          <img class="ping-ad-logo" src="assets/vectors/Ping Logo.svg" alt="PING" />
+          <a href="https://ping.com" target="_blank" rel="noopener" class="ping-ad-cta">
+            Play Your Best &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AFFILIATES / OUR COMPLIMENTS -->
+  <div class="affiliates-wrap">
+    <div class="affiliates-header reveal">
+      <h2 class="affiliates-headline">Our Compliments*</h2>
+      <p class="affiliates-disclaimer">*Affiliate links curated by the Skratch team</p>
+    </div>
+    <div class="product-grid">
+
+      <!-- Dimple & Divot -->
+      <div class="reveal">
+        <a href="#" class="product-card-link">
+          <div class="product-card">
+            <div class="product-card-img-wrap">
+              <img class="product-card-img" src="assets/images/product/DD Brush.png" alt="Hickory Brush Pro" />
+            </div>
+            <div class="product-card-divider"></div>
+            <div class="product-card-meta">
+              <span class="product-card-brand">Dimple & Divot</span>
+              <span class="product-card-price">$65.00</span>
+              <button class="product-card-add" onclick="addToCart({id:'hickory-brush',name:'Hickory Brush Pro',brand:'Dimple & Divot',price:'65',image:'assets/images/product/DD Brush.png'})" aria-label="Add to cart">+</button>
+            </div>
+            <p class="product-title">Hickory<br>Brush Pro</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Titleist Towel -->
+      <div class="reveal">
+        <a href="https://www.titleist.com/product/players-terry/TA22PTT-0.html" target="_blank" rel="noopener" class="product-card-link">
+          <div class="product-card">
+            <div class="product-card-img-wrap">
+              <img class="product-card-img" src="assets/images/product/Titleist Towel.png" alt="Player's Terry Towel" />
+            </div>
+            <div class="product-card-divider"></div>
+            <div class="product-card-meta">
+              <span class="product-card-brand">Titleist</span>
+              <span class="product-card-price">$35.00</span>
+              <button class="product-card-add" onclick="event.preventDefault();addToCart({id:'titleist-terry',name:'Player\'s Terry Towel',brand:'Titleist',price:'35',image:'assets/images/product/Titleist Towel.png'})" aria-label="Add to cart">+</button>
+            </div>
+            <p class="product-title">Player's<br>Terry</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Hazy Golf -->
+      <div class="reveal">
+        <a href="#" class="product-card-link">
+          <div class="product-card">
+            <div class="product-card-img-wrap">
+              <img class="product-card-img" src="assets/images/product/Hazy Sticks.png" alt="Wolf in Sheep's Clothing" />
+            </div>
+            <div class="product-card-divider"></div>
+            <div class="product-card-meta">
+              <span class="product-card-brand">Hazy Golf</span>
+              <span class="product-card-price">$84.00</span>
+              <button class="product-card-add" onclick="addToCart({id:'hazy-wolf',name:'Wolf in Sheep\'s Clothing',brand:'Hazy Golf',price:'84',image:'assets/images/product/Hazy Sticks.png'})" aria-label="Add to cart">+</button>
+            </div>
+            <p class="product-title">Wolf in<br>Sheep's…</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- SSC Grips -->
+      <div class="reveal">
+        <a href="#" class="product-card-link">
+          <div class="product-card">
+            <div class="product-card-img-wrap">
+              <img class="product-card-img" src="assets/images/product/SSC Cord.png" alt="Arrowcord Grips" />
+            </div>
+            <div class="product-card-divider"></div>
+            <div class="product-card-meta">
+              <span class="product-card-brand">SSC</span>
+              <span class="product-card-price">$65.00</span>
+              <button class="product-card-add" onclick="addToCart({id:'ssc-grips',name:'Arrowcord Grips',brand:'SSC',price:'65',image:'assets/images/product/SSC Cord.png'})" aria-label="Add to cart">+</button>
+            </div>
+            <p class="product-title">Arrowcord<br>Grips</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+    <div class="affiliates-cta-row reveal">
+      <a href="#" class="btn btn--primary">Compliment Your Irons</a>
+    </div>
+  </div>
+
+  <!-- NEXT DROP / SIGNUP -->
+  <div id="dropTickerSection" class="ticker-section">
+    <div class="ticker-track" id="dropTickerTrack">
+      <span class="ticker-item">NEXT DROP IN...</span>
+    </div>
+  </div>
+  <div style="max-width:var(--max-w);margin:0 auto">
+    <div class="signup-section">
+      <div class="signup-countdown reveal">
+        <div class="countdown-unit">
+          <span class="countdown-num" id="cd-days">00</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-num" id="cd-hours">00</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-num" id="cd-mins">00</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-num" id="cd-secs">00</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+      <form class="signup-form reveal" id="signupForm" onsubmit="handleSignup(event)">
+        <span class="signup-form-label">Notify Me:</span>
+        <input class="signup-input" type="email" placeholder="YOUR@EMAIL.COM" id="signupEmail" required />
+        <button class="signup-submit" type="submit" aria-label="Subscribe">→</button>
+      </form>
+    </div>
+  </div>
+
+</div><!-- /.page-body -->
+
+  <!-- CHONKY FOOTER -->
+  <footer class="chonky-footer">
+    <div class="footer-top">
+      <div class="reveal"><p class="footer-tagline">Carefully curated collector's items and essentials from your favorite sickos.</p></div>
+      <div class="reveal">
+        <div class="footer-col-links">
+          <a href="index.html" class="footer-col-link">Shop</a>
+          <a href="index.html" class="footer-col-link">Collections</a>
+          <a href="#" class="footer-col-link">About</a>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="footer-col-links">
+          <a href="https://skratch.golf" target="_blank" rel="noopener" class="footer-col-link">Skratch.golf</a>
+          <a href="https://golfwrx.com" target="_blank" rel="noopener" class="footer-col-link">GolfWRX</a>
+          <a href="https://sugarloafsocialclub.com" target="_blank" rel="noopener" class="footer-col-link">Sugarloaf Social Club</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-logo-area">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1360 567.1" class="footer-logo-large" aria-label="Marketplace">
+        <defs>
+          <style>
+            .ftr-masked { mask: url(#ftrMask); }
+            .ftr-diff   { mix-blend-mode: difference; }
+            .ftr-white  { fill: #fff; }
+          </style>
+          <clipPath id="ovalClip" clipPathUnits="userSpaceOnUse">
+            <ellipse cx="1114.89" cy="258.35" rx="248" ry="125"/>
+          </clipPath>
+          <mask id="ftrMask" x="-20.23" y="-15.9" width="1400" height="655.06" maskUnits="userSpaceOnUse">
+            <g>
+              <path class="ftr-white" d="M1232.58,458.9h-72.74v-47.02h199.7v47.02h-73.04v180.26h-53.92v-180.26Z"/>
+              <path class="ftr-white" d="M971.09,411.88h174.31v47.02h-120.7v39.81h114.11v47.34h-114.11v45.77h120.7v47.34h-174.31v-227.28Z"/>
+              <path class="ftr-white" d="M801.22,501.85l82.45-89.97h65.52l-84.02,90.6,88.41,136.68h-64.58l-61.45-95.93-26.33,28.84v67.09h-53.61v-227.28h53.61v89.97Z"/>
+              <path class="ftr-white" d="M611.65,553.58h-36.36v85.58h-53.61v-227.28h87.46c58.94,0,103.14,13.79,103.14,70.22,0,33.54-18.5,52.67-44.52,62.7l56.11,94.36h-63.01l-49.22-85.58ZM575.28,457.02v51.41h35.42c25.39,0,44.83-4.39,44.83-25.71s-19.44-25.71-44.83-25.71h-35.42Z"/>
+              <path class="ftr-white" d="M357.84,411.88h58.94l85.9,227.28h-58.31l-13.79-40.44h-87.78l-13.48,40.44h-57.06l85.58-227.28ZM357.52,555.15h58.62l-29.15-86.52-29.47,86.52Z"/>
+              <path class="ftr-white" d="M103.14,639.16l-51.1-181.83v181.83H0v-227.28h84.64l43.58,163.02,44.52-163.02h83.7v227.28h-52.04v-182.14l-50.79,182.14h-50.47Z"/>
+              <g class="ftr-diff">
+                <path class="ftr-white" d="M1289.03,277.8v67c7.14-3.64,13.86-7.51,20.06-11.57v-44.56c-6.61-3.83-13.3-7.46-20.06-10.87Z"/>
+                <path class="ftr-white" d="M1059.87,181.67c0-2.65-.76-4.71-2.3-6.15-1.54-1.42-3.67-1.93-6.4-1.48-3.32.56-6.64,1.16-9.96,1.81v62.65c4.63-1.25,8.3-2.83,10.98-4.83,2.72-2.02,4.7-4.62,5.88-7.79,1.19-3.18,1.8-7.17,1.8-11.99v-32.22Z"/>
+                <path class="ftr-white" d="M1359.54,258.35c0-67.98-109.53-123.1-244.65-123.1s-244.66,55.11-244.66,123.1c0,23.9,13.53,46.2,36.94,65.07,4.77-3.04,9.58-5.98,14.45-8.79v19.2c4.96,3.22,10.24,6.31,15.82,9.25.7-1.85,1.05-3.82,1.05-5.91v-13.52c0-5.33-1.26-10.16-3.78-14.51-2.52-4.33-6.12-9.06-10.76-14.07v-.25c-.32-.16-.47-.4-.47-.74-5.42-5.89-9.47-11.18-12.22-16.06-2.74-4.87-4.11-10.69-4.11-17.51v-23.21c0-7.98,1.92-15.35,5.82-22,3.9-6.63,9.54-12.13,17.02-16.25,7.5-4.1,13.32-4.85,17.39-2.57,4.05,2.29,6.12,7.47,6.1,15.47v38.95c-5.05,2.32-10.05,4.77-15.01,7.33v-35.36c0-2.99-.72-5.05-2.13-6.14-1.42-1.09-3.53-.9-6.34.65-2.81,1.53-4.91,3.64-6.29,6.26-1.4,2.64-2.08,5.45-2.1,8.44v19.62c0,4.99,1.08,9.41,3.25,13.24,2.17,3.85,5.59,8.55,10.29,14.23.32.42.63.83.94,1.25,5.51,6.1,9.8,11.97,12.83,17.43,3.02,5.47,4.56,11.64,4.56,18.46v15.48c0,6.35-1.29,12.1-3.86,17.3,43.53,20.08,101.55,32.34,165.27,32.34s116.29-11.13,159.07-29.58v-163.61c5.07,2.29,10.09,4.68,15.07,7.18v66.81c6.76,3.39,13.45,7,20.06,10.82v-66.77c4.86,2.81,9.68,5.75,14.45,8.79v107.57c22.82-18.71,36-40.73,36-64.29ZM1015.85,331.52c-5.2,1.39-10.38,2.88-15.55,4.48-6.74-25.92-13.44-51.65-20.08-77.2v84.07c-5.17,1.93-10.29,3.97-15.4,6.14v-164.3c5.1-2.16,10.24-4.2,15.4-6.14v76.27c6.64-27.91,13.33-55.62,20.08-83.14,5.16-1.6,10.35-3.11,15.55-4.48-7.3,27.99-14.55,56.2-21.77,84.64,7.2,26.33,14.47,52.88,21.77,79.64v.02ZM1063.63,321.97c-5.92-23.56-11.83-46.99-17.74-70.29-1.5.55-3.07,1.05-4.7,1.55v72.43c-5.34,1.04-10.69,2.2-16,3.48v-164.28c5.22-1.25,10.48-2.39,15.74-3.43,0,0,.07,0,.11-.02.05,0,.1-.02.14-.04,3.39-.67,6.79-1.28,10.22-1.85,7.67-1.28,13.72.05,18.09,3.78,4.37,3.73,6.57,9.64,6.57,17.62v29.72c0,7.98-1.33,14.74-3.99,20.28-2.65,5.54-6.55,10.04-11.69,13.61-.21.16-.44.3-.66.44,6.41,24.92,12.86,50,19.31,75.25-5.14.49-10.28,1.07-15.4,1.76v-.02ZM1130.35,318.79c-1.24-13.03-2.48-26.06-3.72-39.07-7.58-.23-15.17-.21-22.75,0-1.24,13.01-2.48,26.04-3.72,39.07-5.44.21-10.86.54-16.27.98,6.04-55.25,12.11-110.36,18.17-165.34,8.7-.3,17.41-.3,26.11,0,6.15,54.97,12.3,110.08,18.43,165.34-5.41-.44-10.83-.76-16.26-.97v-.02ZM1198.45,178.6c-6.37-1.41-12.81-2.64-19.24-3.73v148.95c-5.29-.88-10.59-1.65-15.9-2.32v-148.95c-6.64-.83-13.3-1.5-19.97-1.97v-15.35c18.49,1.34,36.9,4.01,55.11,8.02v15.35ZM1256.75,245.93c-5.14-2.02-10.31-3.92-15.52-5.71v-43.19c0-2.99-.78-5.64-2.36-7.91-1.57-2.29-3.84-3.9-6.83-4.85-2.83-.9-5.03-.69-6.62.6-1.59,1.28-2.38,3.43-2.38,6.42v120.85c0,2.99.79,5.59,2.38,7.81,1.59,2.22,3.79,3.76,6.62,4.66,2.99.95,5.26.83,6.83-.39,1.58-1.21,2.36-3.31,2.36-6.31v-35.96c5.21,1.79,10.38,3.69,15.52,5.71v35.45c0,8-2.08,13.28-6.26,15.95-4.17,2.69-10.31,2.58-18.45,0-7.99-2.53-14.14-6.33-18.42-11.71-4.28-5.36-6.43-11.99-6.43-19.98v-119.84c0-7.98,2.15-13.59,6.43-16.72,4.28-3.11,10.45-3.55,18.42-1.04,8.14,2.59,14.28,6.93,18.45,12.73,4.18,5.8,6.26,12.77,6.26,20.75v42.7Z"/>
+                <path class="ftr-white" d="M1105.29,264.96c6.64-.18,13.3-.18,19.94,0-3.32-34.89-6.64-69.74-9.96-104.54-3.32,34.8-6.64,69.65-9.96,104.54h-.02Z"/>
+              </g>
+            </g>
+          </mask>
+        </defs>
+        <g class="ftr-masked">
+          <rect class="ftr-white" x="-20.23" y="-15.9" width="1400" height="560.04" rx="10" ry="10"/>
+        </g>
+        <circle id="footerGolfBall" class="ftr-white" cx="401.38" cy="104.71" r="66.61"/>
+        <!-- Falling ball: animated via cy attribute so the ovalClip works in user-space -->
+        <circle id="footerFallingBall" cx="980" cy="258.35" r="66.61" fill="#fff" clip-path="url(#ovalClip)" style="visibility:hidden"/>
+      </svg>
+    </div>
+  </footer>
+
+  <!-- MINI CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-drawer-header">
+      <h2 class="cart-drawer-title">Your Bag</h2>
+      <button class="cart-drawer-close" id="cartClose">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="cart-drawer-body" id="cartDrawerBody">
+      <div class="cart-empty" id="cartEmpty">
+        <img src="assets/vectors/Bag.svg" width="36" height="36" alt="" />
+        <p>Your bag is empty.</p>
+        <a href="index.html" class="btn btn--outline">Continue Shopping</a>
+      </div>
+      <div class="cart-items" id="cartItems" style="display:none"></div>
+    </div>
+    <div class="cart-drawer-footer" id="cartDrawerFooter" style="display:none">
+      <div class="cart-summary">
+        <div class="cart-summary-row"><span>Subtotal</span><span id="cartSubtotal">$0</span></div>
+        <p class="cart-summary-note">Shipping calculated at checkout</p>
+      </div>
+      <a href="checkout.html" class="btn btn--primary btn--full">Proceed to Checkout</a>
+    </div>
+  </aside>
+
+  <script src="cart.js"></script>
+  <script>
+    /* Curtain footer: pad page-body so content scrolls clear of fixed footer */
+    (function curtainFooter() {
+      var footer = document.querySelector('.chonky-footer');
+      var body   = document.querySelector('.page-body');
+      function update() {
+        var pad = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--pad')) || 20;
+        body.style.paddingBottom = (footer.offsetHeight + pad + pad) + 'px';
+      }
+      update();
+      window.addEventListener('load',   update);
+      window.addEventListener('resize', update);
+    })();
+
+    /* Mobile menu */
+    const mb = document.getElementById('mobileMenuBtn');
+    const mm = document.getElementById('mobileMenu');
+    if (mb) mb.addEventListener('click', () => { const o = mm.classList.toggle('open'); mb.classList.toggle('open', o); });
+
+    /* Countdown — target next Friday midnight */
+    (function countdown() {
+      const now = new Date();
+      const target = new Date(now);
+      const day = target.getDay(); // 0=Sun ... 5=Fri
+      const daysUntilFri = (5 - day + 7) % 7 || 7;
+      target.setDate(target.getDate() + daysUntilFri);
+      target.setHours(0, 0, 0, 0);
+
+      function tick() {
+        const diff = target - new Date();
+        if (diff <= 0) { target.setDate(target.getDate() + 7); return; }
+        const d = Math.floor(diff / 86400000);
+        const h = Math.floor((diff % 86400000) / 3600000);
+        const m = Math.floor((diff % 3600000) / 60000);
+        const s = Math.floor((diff % 60000) / 1000);
+        const pad = n => String(n).padStart(2, '0');
+        document.getElementById('cd-days').textContent = pad(d);
+        document.getElementById('cd-hours').textContent = pad(h);
+        document.getElementById('cd-mins').textContent = pad(m);
+        document.getElementById('cd-secs').textContent = pad(s);
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
+
+    /* Signup form */
+    function handleSignup(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('.signup-submit');
+      const input = document.getElementById('signupEmail');
+      btn.textContent = '✓';
+      input.value = '';
+      input.placeholder = 'You\'re on the list!';
+      setTimeout(() => { btn.textContent = '→'; input.placeholder = 'your@email.com'; }, 3000);
+    }
+  </script>
+
+  <script>
+  // ── Scroll header ────────────────────────────────────────
+  (function() {
+    var header = document.getElementById('siteHeader');
+    if (!header) return;
+    window.addEventListener('scroll', function() {
+      header.classList.toggle('scrolled', window.scrollY > 4);
+    }, { passive: true });
+  })();
+
+  // ── Scroll-driven ticker ──────────────────────────────────
+  (function() {
+    var track = document.getElementById('dropTickerTrack');
+    if (!track) return;
+    var seed = track.firstElementChild;
+    for (var i = 0; i < 9; i++) track.appendChild(seed.cloneNode(true));
+    function tick() {
+      var w = seed.offsetWidth;
+      if (!w) return;
+      var raw = (window.scrollY * 0.5) % w;
+      track.style.transform = 'translateX(' + (-raw) + 'px)';
+    }
+    window.addEventListener('scroll', tick, { passive: true });
+    tick();
+  })();
+
+  // ── Reveal on scroll ─────────────────────────────────────
+  (function() {
+    if (!window.IntersectionObserver) {
+      document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('is-visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+  })();
+
+  // ── Eco bar scroll-hide ───────────────────────────────────
+  (function() {
+    var wrapper = document.getElementById('ecoWrapper');
+    if (!wrapper) return;
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 0) {
+        wrapper.classList.add('eco-hidden');
+      } else {
+        wrapper.classList.remove('eco-hidden');
+      }
+    }, { passive: true });
+  })();
+
+  // ── Footer golf-ball easter egg ───────────────────────────
+  // The footer sits behind page-body (curtain effect), so we listen on window
+  // and hit-test the ball's bounding rect ourselves.
+  (function() {
+    var ball = document.getElementById('footerGolfBall');
+    if (!ball) return;
+
+    var fallingBall = document.getElementById('footerFallingBall');
+
+    // Cubic bezier helper
+    function cb(p0, p1, p2, p3, t) {
+      var u = 1 - t;
+      return u*u*u*p0 + 3*u*u*t*p1 + 3*u*t*t*p2 + t*t*t*p3;
+    }
+
+    function rollBall() {
+      if (ball._active) return;
+      if (ball.style.visibility === 'hidden') return;
+      ball._active = true;
+      ball.classList.add('ball-active');
+
+      // All coords in SVG user-space (viewBox 1360 × 567.1)
+      var sx = 401.38, sy = 104.71; // ball origin
+      var ex = 980,    ey = 258.35; // hole entry (left of oval center)
+
+      // CP1: hold height — stay level for the first ~55% of horizontal distance
+      // CP2: directly above entry point at start height
+      // → ball arrives at hole going straight down, matching the fall phase
+      var cp1x = sx + (ex - sx) * 0.55, cp1y = sy;
+      var cp2x = ex,                    cp2y = sy;
+
+      var dur = 1000, t0 = null;
+
+      (function rollAnim(ts) {
+        if (!t0) t0 = ts;
+        var t = Math.min((ts - t0) / dur, 1);
+        ball.setAttribute('cx', cb(sx, cp1x, cp2x, ex, t));
+        ball.setAttribute('cy', cb(sy, cp1y, cp2y, ey, t));
+        ball.style.transform = 'rotate(' + (t * 500) + 'deg)';
+
+        if (t < 1) {
+          requestAnimationFrame(rollAnim);
+        } else {
+          // Hand off to clipped falling ball (cx/cy animation keeps ovalClip correct)
+          ball.style.visibility = 'hidden';
+          ball.style.transform  = '';
+          ball.classList.remove('ball-active');
+          ball._active = false;
+
+          if (!fallingBall) return;
+          fallingBall.setAttribute('cx', ex);
+          fallingBall.setAttribute('cy', ey);
+          fallingBall.style.visibility = 'visible';
+
+          var tf0 = null;
+          (function fallAnim(ts) {
+            if (!tf0) tf0 = ts;
+            var t = Math.min((ts - tf0) / 480, 1);
+            fallingBall.setAttribute('cy', ey + (640 - ey) * t * t); // ease-in
+            if (t < 1) requestAnimationFrame(fallAnim);
+            else fallingBall.style.visibility = 'hidden';
+          })(performance.now());
+        }
+      })(performance.now());
+    }
+
+    function overBall(x, y) {
+      if (ball._active || ball.style.visibility === 'hidden') return false;
+      var r = ball.getBoundingClientRect();
+      return x >= r.left && x <= r.right && y >= r.top && y <= r.bottom;
+    }
+
+    window.addEventListener('click', function(e) {
+      if (overBall(e.clientX, e.clientY)) rollBall();
+    });
+
+    window.addEventListener('mousemove', function(e) {
+      document.body.style.cursor = overBall(e.clientX, e.clientY) ? 'pointer' : '';
+    }, { passive: true });
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 300" fill="none">
+  <!-- Stylized golfer silhouette -->
+  <ellipse cx="60" cy="28" rx="20" ry="20" fill="rgba(255,255,255,0.15)"/>
+  <path d="M60 48 L45 100 L30 160 L50 158 L60 120 L70 158 L90 160 L75 100 Z" fill="rgba(255,255,255,0.15)"/>
+  <path d="M45 100 L20 140 L35 148 L55 110 Z" fill="rgba(255,255,255,0.15)"/>
+  <path d="M75 100 L100 125 L88 138 L65 108 Z" fill="rgba(255,255,255,0.15)"/>
+  <path d="M50 158 L42 240 L52 240 L60 180 L68 240 L78 240 L70 158 Z" fill="rgba(255,255,255,0.15)"/>
+</svg>
